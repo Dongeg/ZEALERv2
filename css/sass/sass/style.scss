@@ -11,13 +11,14 @@ body{
             display: inline-block;
             list-style: none;
             margin-left: 15px;
+            color: #575d6a;
             
         }
     }
     .section-title{
         font:{
             size: 20px;
-            weight:bold ;
+            color: #31343b;
         }
     }
 }
@@ -30,35 +31,72 @@ body{
 }
 .img-description{
     margin-top: 10px;
+    color: #575D6A;
 }
 //ZEALER出品 css
 .producted{
-    padding-top:50px ;
+    background-color: rgb(246,246,246);
+    padding: {
+        top: 50px;
+        bottom: 50px;
+    }
 }
 //精品推荐&全民测评
+.recommedAndAppreisal{
+    padding:{
+        top: 50px;
+    }
+}
+.responsive{
+    max-width: 550px;
+    margin: 0 auto;
+}
 .recapp-responsive{
+    max-width: 550px;
     margin-top: 15px;
     padding-left:15px ;
     li{
         margin-bottom: 10px;
+        color: #575D6A;
         span{
             float: right;
         }
     }
 }
 //z友生活
+.Zlive{
+  padding-bottom: 50px;   
+}
+.twoAndService{
+    background-color: rgb(246,246,246);
+    padding: {
+        top: 50px;
+        bottom: 50px;
+    }
+}
 //维修
 .form-main{
     max-width:350px ;
     padding-left:15px ;
     margin: 0 auto;
     .form{
+        span{
+            font-size: 12px;
+            color: #abb0bc;
+        }
         input{
             width: 100%;
             height: 38px;
         }
     }
 
+}
+//测试工具
+.test{
+    padding: {
+        top: 50px;
+        bottom: 50px;
+    }    
 }
 %form-btn{
     width: 100%;
@@ -75,20 +113,46 @@ body{
     border: 1px solid rgb(0,140,225);
     @extend %form-btn;
 }
+//实验室
+.laboratory{
+    @extend .producted;
+}
 //about us
+.about-us{
+    padding: {
+        top: 50px;
+        bottom: 50px;
+    } 
+    hr{
+        width: 100%;;
+        height:1px;
+        border:none;
+        border-top:1px solid rgb(236,236,236);
+    }
+}
 .about{
     padding: 0;
     li{
         list-style: none;
         margin-bottom: 15px;
+        color: #757e91;
     }
     .about-title{
         font-size: 1.2em;
     }
 }
 //link
+.footer-link{
+
+}
+.footer-hr{
+    width: 100%;;
+    height:1px;
+    border:none;
+    border-top:1px solid rgb(236,236,236);
+}
 .link-title{
-    
+    color: #757e91;
 }
 .link-main{
     display: inline-block;
@@ -99,10 +163,19 @@ body{
             list-style: none;
             margin-left: 50px;
             margin-bottom: 20px;
+            color: #757e91;
             
         }
     }
 }
 .banquan{
+    color: #757e91;
     text-align: center;
 }
+.footer-720{
+    text-align: center;
+    display: none;
+    color: #757e91;
+    padding-top: 20px;
+}
+@import "media-720","media-1080";
