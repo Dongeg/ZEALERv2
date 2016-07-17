@@ -229,9 +229,16 @@
 					<div class="form-main">
 			        	<form class="form">
 			        		<span>请选择机型</span>
-			        		<p><input type="text" /></p>
+			        		<p><input type="text" placeholder="iphone" /></p>
 			        		<span>请选择故障现象</span>
-			        		<p><input type="text" /></p>
+			        		<p>
+			        			<select>  
+								  <option value ="1">进水</option>  
+								  <option value ="2">无法开机</option>  
+								  <option value="3">严重摔坏</option>  
+								  <option value="4">无wifi</option>  
+								</select> 
+			        		</p>
 			        		<button class="service-btn">查询价格</button>
 			        	</form>
 		        	</div>
@@ -269,15 +276,37 @@
 					
 						<div class="col-md-12 content-show">
 							<div style="float: left;"><span>选择机型</span></div>
-							<img src="img/t5.jpg" class="img-responsive"/>
+							<img src="img/t5.jpg" class="img-responsive" id="photo"/>
 						</div>
 					<div class="form-main">
 			        	<form class="form">
 			        		<span>请选择品牌</span>
-			        		<p><input type="text" /></p>
-			        		<span>请选择故障现象</span>
-			        		<p><input type="text" /></p>
-			        		<button class="test-btn">查询详情</button>
+			        		<p>
+			        		    <select id="model">  
+								  <option value ="0" >iphone</option>  
+								  <option value ="1" >google</option>   
+								</select> 
+			        		</p>
+			        		<span>请选择机型</span>
+			        		<p>
+			        		    <select id="model1" data-type = "0">  
+								  <option value ="0">iphoneSE</option> 
+								  <option value ="1">iphone6splus</option>
+								  <option value ="2">iphone6s</option>
+								  <option value ="3">iphone6plus</option>
+								  <option value ="4">iphone6</option>
+								  <option value ="5">iphone5s</option>
+								  <option value ="6">iphone5c</option>
+								  <option value ="7">iphone5</option>
+								</select>
+			        		    <select id="model2" data-type = "1">  
+								  <option value ="0">Nexus6p</option> 
+								  <option value ="1">Nexus6</option>
+								  <option value ="2">Nexus5x</option>
+								  <option value ="3">Nexus5</option>
+								</select> 								
+			        		</p>
+			        		<button class="test-btn">查看详情</button>
 			        	</form>
 		        	</div>
         		</div>
@@ -416,8 +445,9 @@
         </div>
         <script type="text/javascript" src="js/jquery.js" ></script>
         <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+        <script src="js/script.js"></script>
         <script>
-         $(".carousel").carousel();         
+         $(".carousel").carousel(); 
         </script>
 	</body>
 </html>

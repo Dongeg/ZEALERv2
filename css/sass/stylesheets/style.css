@@ -101,7 +101,7 @@ body {
   color: #abb0bc;
 }
 /* line 88, ../sass/style.scss */
-.form-main .form input {
+.form-main .form input, .form-main .form select {
   width: 100%;
   height: 38px;
 }
