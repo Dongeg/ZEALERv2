@@ -1,0 +1,33 @@
+.animation-one .animation-text{
+    color: #F5F5F5;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    transform: translate(-500px,0);
+}
+@media screen and (min-width:768px){
+    .content-show{
+        position: relative;
+    }
+    .animation-one{
+        
+    }
+    .animation-one img{
+       transition: all 0.35s;
+    }
+    .animation-one:hover img{
+       transform: scale(1.2);
+    }
+    .animation-one:hover .animation-text{
+        transform: translate(0,0);
+        transition: all 0.35s;
+    }
+    .animation-two img{
+        transition: all 0.35s;
+    }
+    .animation-two:hover img{
+        transform: scale(1.2);
+    }
+}
