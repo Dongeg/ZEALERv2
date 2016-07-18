@@ -213,37 +213,63 @@ body {
   position: absolute;
   top: 40%;
   left: 46%;
-  transform: translate(-500px, 0);
+  opacity: 0;
+  transform: translate(0, 100px);
+}
+
+/* line 11, ../sass/_animation.scss */
+.animation-one .animate-left {
+  color: #F5F5F5;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  transform: translate(-100px, 0);
+}
+
+/* line 19, ../sass/_animation.scss */
+.animation-one .animate-right {
+  color: #F5F5F5;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(120px, 0);
 }
 
 @media screen and (min-width: 768px) {
-  /* line 11, ../sass/_animation.scss */
+  /* line 28, ../sass/_animation.scss */
   .content-show {
     position: relative;
   }
 
-  /* line 17, ../sass/_animation.scss */
-  .animation-one img {
-    transition: all 0.35s;
-  }
-
-  /* line 20, ../sass/_animation.scss */
-  .animation-one:hover img {
-    transform: scale(1.2);
-  }
-
-  /* line 23, ../sass/_animation.scss */
+  /* line 31, ../sass/_animation.scss */
   .animation-one:hover .animation-text {
+    opacity: 1;
     transform: translate(0, 0);
     transition: all 0.35s;
   }
 
-  /* line 27, ../sass/_animation.scss */
+  /* line 36, ../sass/_animation.scss */
+  .animation-one:hover .animate-left {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.35s;
+  }
+
+  /* line 41, ../sass/_animation.scss */
+  .animation-one:hover .animate-right {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.35s;
+  }
+
+  /* line 52, ../sass/_animation.scss */
   .animation-two img {
     transition: all 0.35s;
   }
 
-  /* line 30, ../sass/_animation.scss */
+  /* line 55, ../sass/_animation.scss */
   .animation-two:hover img {
     transform: scale(1.2);
   }

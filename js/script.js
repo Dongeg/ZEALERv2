@@ -1,4 +1,17 @@
 $(function(){
+    var handerBars=$("#toogle").children();
+    console.log(handerBars);
+    handerBars[0].className="active";
+    for(var i=0;i<handerBars.length;i++){
+    	$(handerBars[i]).click(function(){
+    		for(var j=0;j<handerBars.length;j++){
+    			$(handerBars[j]).removeClass("active");
+    		}
+            console.log(handerBars[i]);
+    		$(this).addClass("active");
+    	})
+    }
+   
 	$("#model2").css("display","none");
 	$("#model").bind('change', function(){
         var i=this.value;

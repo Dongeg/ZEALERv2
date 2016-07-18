@@ -5,25 +5,50 @@
     position: absolute;
     top: 40%;
     left: 46%;
-    transform: translate(-500px,0);
+    opacity: 0;
+    transform: translate(0,100px);
+}
+.animation-one .animate-left{
+    color: #F5F5F5;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    transform: translate(-100px,0);   
+}
+.animation-one .animate-right{
+    color: #F5F5F5;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(120px,0);   
 }
 @media screen and (min-width:768px){
     .content-show{
         position: relative;
     }
-    .animation-one{
-        
-    }
-    .animation-one img{
-       transition: all 0.35s;
-    }
-    .animation-one:hover img{
-       transform: scale(1.2);
-    }
     .animation-one:hover .animation-text{
+        opacity: 1;
         transform: translate(0,0);
         transition: all 0.35s;
     }
+    .animation-one:hover .animate-left{
+        opacity: 1;
+        transform: translate(0,0);
+        transition: all 0.35s;
+    }
+    .animation-one:hover .animate-right{
+       opacity: 1;
+        transform: translate(0,0);
+        transition: all 0.35s;
+    }
+    
+    
+    
+    
+    
+    
     .animation-two img{
         transition: all 0.35s;
     }
