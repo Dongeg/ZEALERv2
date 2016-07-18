@@ -76,9 +76,12 @@ body{
     }
 }
 //维修
+.img-responsive{
+   max-width:350px ; 
+}
 .form-main{
     max-width:350px ;
-    padding-left:15px ;
+    padding-left:15px;
     margin: 0 auto;
     @at-root.form{
         span{
