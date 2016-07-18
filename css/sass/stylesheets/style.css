@@ -281,21 +281,28 @@ body {
   }
 
   /* line 5, ../sass/_media-720.scss */
-  .section-title {
-    width: 100%;
+  .section-header ul li {
+    padding-bottom: 20px;
   }
 
   /* line 8, ../sass/_media-720.scss */
+  .section-title {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* line 15, ../sass/_media-720.scss */
   .recapp-responsive li span {
     display: none;
   }
 
-  /* line 11, ../sass/_media-720.scss */
+  /* line 18, ../sass/_media-720.scss */
   .footer {
     display: none;
   }
 
-  /* line 14, ../sass/_media-720.scss */
+  /* line 21, ../sass/_media-720.scss */
   .footer-720 {
     display: block;
   }
