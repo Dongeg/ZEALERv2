@@ -184,7 +184,7 @@ body{
 }
 //下拉列表插件
 .list-widget-main .show{
-    cursor: pointer
+    cursor: pointer;
     width: 100%;
     height: 38px;
     padding-left:15px ;
@@ -203,6 +203,7 @@ body{
     z-index: 1;
 }
 .list-widget-main .list-main li{
+    cursor: pointer;
     background-color: #F5F5F5;
     padding-left:15px ;
     height: 38px;
