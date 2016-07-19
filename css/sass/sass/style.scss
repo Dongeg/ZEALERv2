@@ -34,6 +34,8 @@ body{
     margin-top: 10px;
     color: #575D6A;
     text-overflow:ellipsis;
+    overflow:hidden; 
+    white-space:nowrap; 
 }
 //ZEALER出品 css
 .producted{

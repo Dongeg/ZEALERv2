@@ -42,102 +42,104 @@ body {
   margin-top: 10px;
   color: #575D6A;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .producted, .laboratory {
   background-color: #f6f6f6;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .recommedAndAppreisal {
   padding-top: 50px;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .responsive {
   max-width: 550px;
   margin: 0 auto;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .recapp-responsive {
   max-width: 550px;
   margin-top: 15px;
   padding-left: 15px;
 }
-/* line 60, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .recapp-responsive li {
   margin-bottom: 10px;
   color: #575D6A;
 }
-/* line 63, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .recapp-responsive li span {
   float: right;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .Zlive {
   padding-bottom: 50px;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .twoAndService {
   background-color: #f6f6f6;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .form-main {
   max-width: 350px;
   padding-left: 15px;
   margin: 0 auto;
 }
-/* line 85, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .form-main .form span {
   font-size: 12px;
   color: #abb0bc;
 }
-/* line 89, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .form-main .form input, .form-main .form select {
   width: 100%;
   height: 38px;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .test {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .service-btn, .test-btn {
   width: 100%;
   height: 38px;
   color: #FFFFFF;
 }
 
-/* line 108, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .service-btn {
   background-color: #00b06c;
   border: 1px solid #00b06c;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .test-btn {
   background-color: #008ce1;
   border: 1px solid #008ce1;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .about-us {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 128, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .about-us hr {
   width: 100%;
   height: 1px;
@@ -145,22 +147,22 @@ body {
   border-top: 1px solid #ececec;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .about {
   padding: 0;
 }
-/* line 137, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .about li {
   list-style: none;
   margin-bottom: 15px;
   color: #757e91;
 }
-/* line 142, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .about .about-title {
   font-size: 1.2em;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .footer-hr {
   width: 100%;
   height: 1px;
@@ -168,22 +170,22 @@ body {
   border-top: 1px solid #ececec;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .link-title {
   display: inline-block;
   width: 80px;
   color: #757e91;
 }
 
-/* line 161, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .link-main {
   display: inline-block;
 }
-/* line 163, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .link-main ul {
   padding: 0;
 }
-/* line 165, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .link-main ul li {
   display: inline-block;
   list-style: none;
@@ -192,13 +194,13 @@ body {
   color: #757e91;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .banquan {
   color: #757e91;
   text-align: center;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .footer-720 {
   text-align: center;
   display: none;
@@ -206,7 +208,7 @@ body {
   padding-top: 20px;
 }
 
-/* line 187, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .list-widget-main .show {
   cursor: pointer;
   width: 100%;
@@ -216,7 +218,7 @@ body {
   border: 1px solid #aaa;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .list-widget-main .list-main {
   position: absolute;
   margin: 0;
@@ -229,7 +231,7 @@ body {
   z-index: 1;
 }
 
-/* line 206, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .list-widget-main .list-main li {
   cursor: pointer;
   background-color: #F5F5F5;
