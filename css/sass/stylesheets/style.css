@@ -220,7 +220,7 @@ body {
 
 /* line 197, ../sass/style.scss */
 .list-widget-main .list-main {
-  position: relative;
+  position: absolute;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -348,5 +348,11 @@ body {
   /* line 21, ../sass/_media-720.scss */
   .footer-720 {
     display: block;
+  }
+}
+@media screen and (max-width: 420px) {
+  /* line 2, ../sass/_media-420.scss */
+  .list-widget-main .list-main {
+    position: relative;
   }
 }
