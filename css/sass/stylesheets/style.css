@@ -220,7 +220,7 @@ body {
 
 /* line 197, ../sass/style.scss */
 .list-widget-main .list-main {
-  position: absolute;
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -234,6 +234,7 @@ body {
 /* line 208, ../sass/style.scss */
 .list-widget-main .list-main li {
   cursor: pointer;
+  width: 100%;
   background-color: #F5F5F5;
   padding-left: 15px;
   height: 38px;
@@ -310,6 +311,12 @@ body {
     transform: scale(1.2);
   }
 }
+@media screen and (max-width: 1080px) {
+  /* line 2, ../sass/_media-1080.scss */
+  .recapp-responsive {
+    padding-left: 50px;
+  }
+}
 @media screen and (max-width: 720px) {
   /* line 2, ../sass/_media-720.scss */
   #slidershow {
@@ -341,11 +348,5 @@ body {
   /* line 21, ../sass/_media-720.scss */
   .footer-720 {
     display: block;
-  }
-}
-@media screen and (max-width: 1080px) {
-  /* line 2, ../sass/_media-1080.scss */
-  .recapp-responsive {
-    padding-left: 50px;
   }
 }
