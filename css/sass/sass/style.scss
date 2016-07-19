@@ -184,4 +184,30 @@ body{
     color: #757e91;
     padding-top: 20px;
 }
+//下拉列表插件
+.list-widget-main .show{
+    width: 100%;
+    height: 38px;
+    padding-left:15px ;
+    line-height: 38px;
+    border: 1px solid #aaa;
+}
+.list-widget-main .list-main{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-width:350px;
+    border: 1px solid #aaa;
+    display: none;
+    z-index: 1;
+}
+.list-widget-main .list-main li{
+    background-color: #F5F5F5;
+    padding-left:15px ;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #aaa;
+}
 @import "animation","media-720","media-1080";
