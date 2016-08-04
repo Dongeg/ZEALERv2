@@ -7,7 +7,7 @@
 		<script>
 		    var w= document.documentElement.clientWidth;
 		    var h= document.documentElement.clientHeight;
-			var loadingDiv="<div id='loading' style='width: 100%;background-color: #3498DB;position: absolute;z-index: 100;'><div id='preloader5'></div></div>"
+			var loadingDiv="<div id='loading'><div id='preloader5'></div></div>"
 			document.write(loadingDiv);
 			var loading=document.getElementById("loading");
 			loading.style.height=h+"px";
@@ -20,6 +20,14 @@
 			}
 		</script>
 		<style>
+		    #loading{
+		       width: 100%;
+		       background-color: #3498DB;
+		       position: absolute;
+		       z-index: 100;
+		       margin: 0;
+		       padding: 0;	
+		    }
 			#preloader5{
 			    position:relative;
 			    left: 50%;
