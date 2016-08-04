@@ -4,6 +4,58 @@
 		<meta charset="utf-8" />
 		<title>ZALER</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script>
+		    var w= document.documentElement.clientWidth;
+		    var h= document.documentElement.clientHeight;
+			var loadingDiv="<div id='loading' style='width: 100%;background-color: #3498DB;position: absolute;z-index: 100;'><div id='preloader5'></div></div>"
+			document.write(loadingDiv);
+			var loading=document.getElementById("loading");
+			loading.style.height=h+"px";
+			document.onreadystatechange = function completeLoading() { //加载状态为complete时移除loading效果
+				 if (document.readyState == "complete") { 
+//				 	document.getElementById("page1").style.display = "block";//#page是你第一个页面 
+				 	var loadingMask = document.getElementById('loading'); //获取动画预加载动画的div 
+				 	loadingMask.parentNode.removeChild(loadingMask); //找到加载动画父级，然后删除自己
+				 	}
+			}
+		</script>
+		<style>
+			#preloader5{
+			    position:relative;
+			    left: 50%;
+			    top: 50%;
+			    transform: translate(-15px,-15px);
+			    width:30px;
+			    height:30px;
+			    background:#3498db;
+			    border-radius:50px;
+			    animation: preloader_5 1.5s infinite linear;
+			}
+			#preloader5:after{
+			    position:absolute;
+			    width:50px;
+			    height:50px;
+			    border-top:10px solid #9b59b6;
+			    border-bottom:10px solid #9b59b6;
+			    border-left:10px solid transparent;
+			    border-right:10px solid transparent;
+			    border-radius:50px;
+			    content:'';
+			    top:-20px;
+			    left:-20px;
+			    animation: preloader_5_after 1.5s infinite linear;
+			}
+			@keyframes preloader_5 {
+			    0% {transform: rotate(0deg);}
+			    50% {transform: rotate(180deg);background:#2ecc71;}
+			    100% {transform: rotate(360deg);}
+			}
+			@keyframes preloader_5_after {
+			    0% {border-top:10px solid #9b59b6;border-bottom:10px solid #9b59b6;}
+			    50% {border-top:10px solid #3498db;border-bottom:10px solid #3498db;}
+			    100% {border-top:10px solid #9b59b6;border-bottom:10px solid #9b59b6;}
+			}			
+		</style>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/sass/stylesheets/style.css" />
 		<link rel="Shortcut Icon" href="favicon.ico" />
